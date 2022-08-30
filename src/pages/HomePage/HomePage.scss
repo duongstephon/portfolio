@@ -1,0 +1,21 @@
+@use '../../styles/partials/global.scss' as *;
+// @use './styles/partials/mixins.scss';
+@use '../../styles/partials/variables.scss';
+@use '../../styles/partials/fonts.scss';
+
+.homepage {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 10rem;
+
+    &__title {
+        font-family: 'DMSerifText';
+        font-size: 6rem;
+        color: variables.$dark-brown;
+    }
+
+    &__description {
+        inline-size: 60rem;
+        font-size: 1.4rem;
+    }
+}

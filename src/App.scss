@@ -1,0 +1,9 @@
+@use './styles/partials/global.scss' as *;
+// @use './styles/partials/mixins.scss';
+@use './styles/partials/variables.scss';
+
+.app {
+  background-color: variables.$light-brown;
+  margin: 0;
+  padding: 0;
+}

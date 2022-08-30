@@ -1,0 +1,30 @@
+@use '../../styles/partials/global.scss' as *;
+// @use './styles/partials/mixins.scss';
+@use '../../styles/partials/variables.scss';
+@use '../../styles/partials/fonts.scss';
+
+p {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.navbar {
+    display: flex;
+    padding: 2rem 1.5rem 0rem 1.5rem;
+    border-bottom: solid 1px rgba(88, 74, 60, 0.4);
+
+    &__logo {
+        width: 2rem;
+        margin-right: 5rem;
+    }
+
+    &__link {
+        margin: 0 7rem 0 0;
+        padding-bottom: 1.7rem;
+
+        &:hover {
+            border-bottom: solid 3px variables.$orange-red;
+            padding-bottom: 1.5rem;
+        }
+    }
+}
