@@ -1,0 +1,25 @@
+@use '../../styles/partials/global.scss' as *;
+// @use './styles/partials/mixins.scss';
+@use '../../styles/partials/variables.scss';
+@use '../../styles/partials/fonts.scss';
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+
+    &__contact {
+        margin-right: 20rem;
+    }
+
+    &__links {
+        display: flex;
+        justify-content: space-between;
+        width: 5rem;
+    }
+
+    &__icon {
+        width: 2rem;
+    }
+}
