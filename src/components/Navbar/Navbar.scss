@@ -31,12 +31,20 @@ p {
 
     &__link {
         margin: 0 5rem 0 0;
-        padding-bottom: 1.7rem;
+        padding-bottom: 1.5rem;
         align-self: center;
+        text-decoration: none;
+        color: black;
 
         &:hover {
             border-bottom: solid 3px variables.$orange-red;
-            padding-bottom: 1.5rem;
+            padding-bottom: 1.3rem;
+        }
+
+        &:active {
+            font-weight: 600;
+            border-bottom: solid 3px variables.$orange-red;
+            padding-bottom: 1.3rem;
         }
     }
 }
