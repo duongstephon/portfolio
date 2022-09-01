@@ -2,3 +2,75 @@
 // @use './styles/partials/mixins.scss';
 @use '../../styles/partials/variables.scss';
 @use '../../styles/partials/fonts.scss';
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 10rem;
+
+    &__header {
+        font-family: 'DMSerifText';
+        font-size: 4rem;
+        color: variables.$dark-brown;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        background-color: white;
+        border-radius: 5px;
+        width: 30rem;
+        margin: 0 auto 5rem auto;
+        padding: 1rem;
+    }
+
+    &__name-email {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__label-input {
+        display: flex;
+        flex-direction: column;
+        width: 14.5rem;
+    }
+
+    &__label {
+        color: variables.$orange-red;
+    }
+
+    &__input {
+        border-radius: 5px;
+        border: solid 1px variables.$dark-brown;
+        padding: 0.4rem;
+        font-family: 'Anek Malayalam';
+        font-size: 1rem;
+        background-color: white;
+        margin-bottom: 1rem;
+    }
+
+    &__subject {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__message {
+        resize: none;
+        width: 97.5%;
+        height: 8rem;
+    }
+
+    &__button {
+        background-color: variables.$dark-brown;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        padding: 0.4rem;
+        font-family: 'Anek Malayalam';
+        font-size: 1.2rem;
+        width: 12rem;
+        align-self: flex-end;
+    }
+}
