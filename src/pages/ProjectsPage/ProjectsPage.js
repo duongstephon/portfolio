@@ -1,9 +1,11 @@
 import React from 'react';
 import './ProjectsPage.scss';
 import ProjectData from '../../data/data.json';
+import { useState, useEffect } from 'react';
+import Modal from '../../components/Modal/Modal';
 
 const ProjectsPage = () => {
-  console.log(ProjectData)
+
   return (
     <div className='projects'>
       <h1 className='projects__title'>Projects</h1>
