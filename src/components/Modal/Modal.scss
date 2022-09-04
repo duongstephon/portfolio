@@ -1,0 +1,15 @@
+@use '../../styles/partials/global.scss' as *;
+// @use './styles/partials/mixins.scss';
+@use '../../styles/partials/variables.scss';
+@use '../../styles/partials/fonts.scss';
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    &__image {
+        width: 20rem;
+    }
+
+}
