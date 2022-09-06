@@ -23,7 +23,7 @@
     },
     {
         "title": "Brainflix",
-        "description": "Brainflix is a fully responsive application built using React and Sass",
+        "description": "Brainflix is a fully responsive application built using React and Sass. The main page has a displayed hero video that is filtered out from other videos found on the right. When new video is clicked, it is displayed as the hero video, with previous video now found in the section to the right. All data is fetched using axios to a back-end server, such as videos, description and comments.",
         "techstack": ["HTML/CSS", "JavaScript", "React", "Sass", "Express"],
         "clientgit": "https://github.com/duongstephon/stephon-duong-brainflix",
         "servergit": "https://github.com/duongstephon/stephon-duong-brainflix-api"

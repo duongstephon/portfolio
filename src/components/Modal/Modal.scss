@@ -7,10 +7,35 @@
     display: flex;
     flex-direction: column;
     margin: auto;
+    font-family: 'Anek Malayalam';
+
+    &__card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        margin: 1rem auto;
+        width: 60%;
+        background-color: white;
+        border-radius: 10px;
+    }
 
     &__image {
-        width: 40%;
-        align-self: center;
+        width: 95%;
+        display: block;
+        margin: 1rem auto;
+        border-radius: 10px;
+    }
+
+    &__info {
+        margin: 0 2rem;
+    }
+
+    &__title {
+        font-size: 2.5rem;
+        margin: 0;
+        color: variables.$dark-brown;
+    }
+
+    &__description {
+        font-size: 1.2rem;
     }
 
 }

@@ -13,10 +13,14 @@ const Modal = (props) => {
   return (
     <div className='modal'>
     <button onClick={props.closeModal}>Close</button>
-    <img className='modal__image' src={projectImages[props.project.title]} alt='project thumbnail' />
-    <h3>{props.project.title}</h3>
-    <p>{props.project.description}</p>
-    <a href={props.project.clientgit}><button>Client</button></a>
+    <div className='modal__card'>
+      <img className='modal__image' src={projectImages[props.project.title]} alt='project thumbnail' />
+      <div className='modal__info'>
+        <h3 className='modal__title'>{props.project.title}</h3>
+        <p className='modal__description'>{props.project.description}</p>
+        <a href={props.project.clientgit}><button>Client</button></a>
+      </div>
+    </div>
     </div>
   )
 }
