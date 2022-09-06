@@ -11,7 +11,7 @@
 
     &__card {
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        margin: 1rem auto;
+        margin: 1rem auto 3rem auto;
         width: 60%;
         background-color: white;
         border-radius: 10px;
@@ -36,6 +36,32 @@
 
     &__description {
         font-size: 1.2rem;
+    }
+
+    &__techstack {
+        column-count: 3;
+    }
+
+    &__techstack-tech {
+        margin: 0 0 0.4rem 0;
+        font-size: 1.2rem;
+    }
+
+    &__git-link {
+        background-color: variables.$orange-red;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        padding: 0.4rem;
+        font-family: 'Anek Malayalam';
+        font-size: 1.2rem;
+        width: 12rem;
+        align-self: flex-end;
+        margin-bottom: 1rem;
+
+        &:active {
+            background-color: #AD2F0D;
+        }
     }
 
 }

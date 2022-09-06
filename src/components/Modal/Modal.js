@@ -18,7 +18,13 @@ const Modal = (props) => {
       <div className='modal__info'>
         <h3 className='modal__title'>{props.project.title}</h3>
         <p className='modal__description'>{props.project.description}</p>
-        <a href={props.project.clientgit}><button>Client</button></a>
+        <ul className='modal__techstack'>
+          {props.project.techstack.map(tech => {
+            return(
+              <li className='modal__techstack-tech'>{tech}</li>
+              )})}
+        </ul>
+        <a href={props.project.clientgit}><button className='modal__git-link'>Git Repository</button></a>
       </div>
     </div>
     </div>
