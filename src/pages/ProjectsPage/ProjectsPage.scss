@@ -2,3 +2,87 @@
 // @use './styles/partials/mixins.scss';
 @use '../../styles/partials/variables.scss';
 @use '../../styles/partials/fonts.scss';
+
+.projects {
+    display: contents;
+    font-family: 'DMSerifText';
+
+    &__title {
+        color: variables.$dark-brown;
+        margin: 1rem 10rem;
+    }
+
+    &__all-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem auto;
+    }
+
+    &__card {
+        width: 13rem;
+        height: 61vh;
+        background-color: #3A3F40;
+        margin: 2px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0rem 1rem;
+        color: white;
+
+        &:hover {
+            transition: transform .5s ease;
+            transform: scale(1.1);
+            filter: grayscale(50%);
+            background-position: center;
+            background-size: cover;
+        }
+
+        &--readme {
+            &:hover {
+                background-image: url('../../assets/background-images/redswirl.avif');
+            }
+        }
+
+        &--google {
+            &:hover {
+                background-image: url('../../assets/background-images/triangle.avif');
+            }
+        }
+
+        &--instock {
+            &:hover {
+                background-image: url('../../assets/background-images/brown-wave.avif');
+            }
+        }
+
+        &--brainflix {
+            &:hover {
+                background-image: url('../../assets/background-images/purple.avif');
+            }
+        }
+
+    }
+
+    &__card-title {
+        transform: rotate(-90deg);
+        justify-content: flex-start;
+        align-self: flex-end;
+        margin: 5rem 0rem;
+        font-weight: 200;
+        font-size: 3rem;
+
+        &--google {
+            margin: 1.5rem 0rem;
+        }
+
+        &--instock {
+            margin: 4.5rem 0rem;
+        }
+    }
+    
+    &__card-number {
+        justify-content: flex-end;
+        font-size: 1.2rem;
+    }
+}
