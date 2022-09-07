@@ -1,12 +1,12 @@
 import React from 'react';
 import './ProjectsPage.scss';
 import ProjectData from '../../data/data.json';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Modal from '../../components/Modal/Modal'
 
 const ProjectsPage = () => {
-  const [ isShowing, setIsShowing ] = useState(false)
-  const [ project, setProject ] = useState(null)
+  const [ isShowing, setIsShowing ] = useState(false);
+  const [ project, setProject ] = useState(null);
 
   const openModal = () => {
     setIsShowing(true);
@@ -16,6 +16,7 @@ const ProjectsPage = () => {
     setProject(null)
     setIsShowing(false);
   }
+
 
   return (
     <div className='projects'>
