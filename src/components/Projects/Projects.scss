@@ -3,13 +3,14 @@
 @use '../../styles/partials/variables.scss';
 @use '../../styles/partials/fonts.scss';
 
-.projects {
-    display: flex;
-    flex-direction: column;
+.home-projects {
+    display: contents;
 
     &__title {
         font-family: 'DMSerifText';
         font-size: 4rem;
+        margin: 0;
+        color: variables.$dark-brown;
     }
 
     &__section {
