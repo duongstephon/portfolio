@@ -5,13 +5,14 @@
 
 .home-projects {
     display: contents;
+    background-color: variables.$dark-brown;
 
 
     &__title {
         font-family: 'DMSerifText';
         font-size: 4rem;
         margin: 0 0 3rem 0;
-        color: variables.$dark-brown;
+        color: variables.$light-brown;
     }
     
     &__middle {
@@ -50,7 +51,7 @@
         z-index: 100;
         font-size: 5rem;
         cursor: pointer;
-        color: variables.$dark-brown;
+        color: variables.$light-brown;
         width: 5rem;
     }
 
