@@ -6,21 +6,79 @@
 .home-projects {
     display: contents;
 
+
     &__title {
         font-family: 'DMSerifText';
         font-size: 4rem;
-        margin: 0;
+        margin: 0 0 3rem 0;
         color: variables.$dark-brown;
+    }
+    
+    &__middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     &__section {
         display: flex;
-        background-color: variables.$dark-brown;
-        padding: 1.5rem;
-        border-radius: 5px;
+        flex-direction: row;
+        width: 100%;
+        max-width: 60rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__image-slides {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 
     &__image {
-        width: 20rem;
+        width: 100%;
+        max-width: 700px;
+        max-height: 500px;
+        z-index: 0;
+        border-radius: 10px;
+        filter: grayscale(0.7);
+    }
+
+    &__arrow {
+        z-index: 100;
+        font-size: 5rem;
+        cursor: pointer;
+        color: variables.$dark-brown;
+        width: 5rem;
+    }
+
+    &__active {
+        opacity: 1;
+        transition-duration: 1s;
+        transform: scale(1.08);
+    }
+
+    &__not-active {
+        opacity: 0;
+        transition-duration: 1s ease;
+    }
+
+    &__button {
+        background-color: variables.$dark-brown;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        padding: 0.4rem;
+        font-family: 'Anek Malayalam';
+        font-size: 1.2rem;
+        width: 12rem;
+        align-self: flex-end;
+        margin: 2rem 0 0 0;
+
+        &:active {
+            background-color: #493D32;
+        }
     }
 }

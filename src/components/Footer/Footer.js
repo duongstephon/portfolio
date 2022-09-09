@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div className='footer'>
       <div>
-        <Link to='/contact' className='footer__contact'><p>Contact</p></Link>
+        <Link to='/contact' className='footer__contact'><p className='footer__text'>Contact</p></Link>
       </div>
       <div className='footer__links'>
       <a href='http://github.com/duongstephon'><img className='footer__icon' src={Github} alt='github'/></a>
