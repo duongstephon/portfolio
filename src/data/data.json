@@ -1,0 +1,31 @@
+[
+    {
+        "title": "Read.ME",
+        "description": "Read.ME is a community forum-based inspired by sites like Reddit and Quora. This application uses web-token authentication, allowing logged users to shares posts and comments on various subjects. Read.ME is a fully responsive application, with data stored in a MySQL database.",
+        "techstack": ["HTML/CSS", "JavaScript", "React", "Axios", "Sass", "Node", "Express", "Knex", "MySQL"],
+        "clientgit":"https://github.com/duongstephon/capstone-client",
+        "servergit":"https://github.com/duongstephon/capstone-server"
+    },
+    {
+        "title": "Google Industry Project",
+        "description": "Google TeleHealth is a tool to address communication challenges within the telehealth space, pitched to Google Representatives. Misunderstandings during a healthcare conversation are not only frustrating but can lead to dangerous health outcomes. Hearing disabilities and language barriers can make this communication even more frustrating. Using a combination of Speech-to-Text technology, as well as Web API's, Google TeleHealth allows doctors and patients the ability to transcribe what has been said to text.",
+        "techstack": ["HTML/CSS", "JavaScript", "React", "Sass", "TypeScript"],
+        "clientgit":"https://github.com/duongstephon/google-telehealth",
+        "servergit": ""
+    },
+    {
+        "title": "InStock",
+        "description": "InStock is a fully responsive warehouse and inventory management CRUD applciation, displaying warehouse and inventory information. Users are able to view, edit, add and delete warehouse and inventory items.",
+        "techstack": ["HTML/CSS", "JavaScript", "React", "Sass", "Node", "Express"],
+        "clientgit": "https://github.com/duongstephon/stephon-duong-instock",
+        "servergit": "https://github.com/duongstephon/instock-api"
+
+    },
+    {
+        "title": "Brainflix",
+        "description": "Brainflix is a fully responsive application built using React and Sass. The main page has a displayed hero video that is filtered out from other videos found on the right. When new video is clicked, it is displayed as the hero video, with previous video now found in the section to the right. All data is fetched using axios to a back-end server, such as videos, description and comments.",
+        "techstack": ["HTML/CSS", "JavaScript", "React", "Sass", "Express"],
+        "clientgit": "https://github.com/duongstephon/stephon-duong-brainflix",
+        "servergit": "https://github.com/duongstephon/stephon-duong-brainflix-api"
+    }
+]

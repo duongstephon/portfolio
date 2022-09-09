@@ -7,15 +7,45 @@
     display: flex;
     flex-direction: column;
     padding: 1.5rem 10rem;
+    margin-bottom: 1rem;
 
-    &__title {
-        font-family: 'DMSerifText';
-        font-size: 6rem;
-        color: variables.$dark-brown;
+    &__profile {
+        display: flex;
+        margin: 2rem 0rem;
+        justify-content: space-between;
     }
 
     &__description {
-        inline-size: 60rem;
+        width: 65%;
+    }
+
+    &__title {
+        font-family: 'DMSerifText';
+        font-size: 5rem;
+        color: variables.$dark-brown;
+        margin: 0 0 3rem 0;
+    }
+
+    &__text {
         font-size: 1.4rem;
     }
+
+    &__image {
+        width: 18rem;
+        height: 23rem;
+        align-self: center;
+        justify-self: center;
+        position: relative;
+        filter: grayscale(60%);
+        box-shadow: 20px 20px variables.$dark-brown;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+.bolded {
+    color: variables.$orange-red;
 }

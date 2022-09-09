@@ -1,0 +1,34 @@
+@use '../../styles/partials/global.scss' as *;
+// @use './styles/partials/mixins.scss';
+@use '../../styles/partials/variables.scss';
+@use '../../styles/partials/fonts.scss';
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    border-top: solid 1px rgba(88, 74, 60, 0.4);
+
+    &__contact {
+        margin: 0 20rem 0 0;
+        color: black;
+    }
+
+    &__links {
+        display: flex;
+        justify-content: space-between;
+        width: 5rem;
+    }
+
+    &__icon {
+        width: 2rem;
+    }
+
+    &__text {
+        margin: 0;
+        color: variables.$dark-brown;
+        height: 1rem;
+    }
+}
+
